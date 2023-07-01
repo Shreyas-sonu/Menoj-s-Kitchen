@@ -1,0 +1,81 @@
+.ia1{
+    position: relative;
+    top: 200px;
+    left:10px
+}
+.ia2{
+    position: relative;
+    top:270px;
+    left:-190px;
+}
+.ia3{
+    position: relative;
+    top:330px;
+    left:-190px;
+}
+.ia4{
+    position: relative;
+    top:370px;
+    left:-80px;
+}
+.ia5{
+    position: relative;
+    top: 200px;
+    left:300px
+}
+.ia6{
+    position: relative;
+    top:270px;
+    left:290px;
+}
+.ia7{
+    position: relative;
+    top:330px;
+    left:80px;
+}
+.ia8{
+    position: relative;
+    top: 180px;
+    left:-250px
+}
+.ia1,.ia2,.ia3,.ia4,.ia5,.ia6,.ia7,.ia8{
+    border-radius: 50%;
+}
+#aii{
+    transition: transform 0.7 ease-in-out;
+    border-radius: 50%;
+}
+#ai1:hover{
+    transform: scale(1.3);
+    border-radius: 20%;
+    cursor: crosshair;
+}
+.offer-img{
+    animation-name: offer;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+@keyframes offer {
+    0%{
+        transform: rotateY(0deg);
+        transition: all 0.5s ease-in-out;
+    }
+    25%{
+        transform: rotateY(360deg);
+        transition: all 0.5s ease-in-out;
+    }
+     50%{
+        transform: scale(1),rotateY(0deg);
+        transition: all 0.5s ease-in-out;
+    }
+      75%{
+        transform: scale(1),rotateY(-360deg);
+        transition: all 0.5s ease-in-out;
+    }
+        100%{
+        transform: scale(1),rotateY(-360deg);
+        transition: all 0.5s ease-in-out;
+    }
+}
